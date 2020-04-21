@@ -14,9 +14,9 @@ public class Listing_12_14 {
                 PrintWriter output = new PrintWriter(file)
         ) {
             output.print("John T Smith ");
-            output.print(90);
+            output.print(90 + " ");
             output.print("Eric K Jones ");
-            output.print(85);
+            output.print(85 + " ");
         }
     }
 }
