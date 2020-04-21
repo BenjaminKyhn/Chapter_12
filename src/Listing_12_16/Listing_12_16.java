@@ -1,3 +1,5 @@
+package Listing_12_16;
+
 import java.io.*;
 import java.util.*;
 
@@ -11,7 +13,7 @@ public class Listing_12_16 {
 
         // Check if source file exists
         File sourceFile = new File(args[0]);
-        if (sourceFile.exists()) {
+        if (!sourceFile.exists()) {
             System.out.println("Source file " + args[0] + " does not exist");
             System.exit(2);
         }
@@ -19,7 +21,7 @@ public class Listing_12_16 {
         // Check if target file exists
         File targetFile = new File(args[1]);
         if (targetFile.exists()) {
-            System.out.println("Target file " + args[1] + " does not exist");
+            System.out.println("Target file " + args[1] + " already exists");
             System.exit(3);
         }
 
