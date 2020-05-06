@@ -28,6 +28,7 @@ public class Exercise_12_12 {
             s = s.replaceAll("\n\\s*\\{", " {");
         }
 
+        // PrintWriter writes to the file while System.out.println writes to the console
         try (
                 PrintWriter output = new PrintWriter(file);
         ){
